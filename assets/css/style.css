@@ -246,7 +246,7 @@ nav.navbar.navbar-policy {
   left: 10px;
   width: 300px;
   height: auto;
-  box-shadow: 0 0 10px 0 #072566;
+  box-shadow: 0 0 10px 0 #b35c1e;
 }
 #home .project-details h1 {
   font-size: 24px;
@@ -465,12 +465,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .effetMoveGradient,
 .effetMoveGradient:hover {
   text-shadow: 0px 3px 6px #322601;
-  background-color: #210d91;
+  background-color: #b35c1e;
   background: linear-gradient(
     -45deg,
-    #4144ff,
-    #072566,
-    #5862f1,
+    #ff9e54,
+    #E48137,
+    #d6702b,
     #382b02
   ) !important;
   background-size: 400% 400%;
@@ -743,7 +743,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: conic-gradient(
     from 40deg at 50% 50%,
     rgba(255, 255, 255, 0) 50%,
-    #a11173 100%
+    #d6702b 100%
   );
   animation: rotateAndScaleAnimation 3s linear infinite;
 }
