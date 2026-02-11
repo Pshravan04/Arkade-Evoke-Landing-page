@@ -33,10 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
          $mail->addAddress('salesconnect.teambb@gmail.com');
         $mail->addAddress('thegrowthmonks@gmail.com');
-        $mail->addAddress('shravanphutanr@gmail.com');
+        // $mail->addAddress('shravanphutanr@gmail.com');
 
         $mail->isHTML(true);
-        $mail->Subject = 'New Lead Arkade Evoke';
+        $mail->Subject = 'New Lead Arkade Evoke Goregaon West';
         $mail->Body = "
             <h2>New Lead Submission</h2>
             <p><strong>Name:</strong> {$name}</p>
