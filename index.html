@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="16x16" />
+    <link rel="icon" href="assets/images/favicon/favicon.png" type="image/png" sizes="16x16" />
     <!-- SEO -->
     <!-- HTML Meta Tags -->
     <title>Arkade Evoke Goregaon West</title>
@@ -13,20 +13,11 @@
         content="Arkade Evoke: Premium 2 & 3 BHK Flats in Goregaon West. New Launch Residential Project in Bangur Nagar, Goregaon. Luxury Apartments Near Link Road.">
     <meta name="keywords"
         content="Arkade Evoke, Arkade Goregaon, Arkade Goregaon West, Arkade Bangur Nagar, 2 BHK in Goregaon West, 3 BHK in Goregaon West, New Launch in Goregaon, Luxury Apartments Goregaon">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="">
     <meta property="og:description"
         content="Discover Arkade Evoke Goregaon West - Luxury villa   with nature-infused living, premium amenities, NMIA proximity, and excellent connectivity. Plotted development near Mumbai-Pune Expressway.">
-    <meta property="og:image" content="">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="">
-    <meta property="twitter:url" content="">
-    <meta name="twitter:title" content="">
-
-    <meta property="og:image" content="">
+    <link rel="preconnect" href="https://maps.google.com">
+    <link rel="dns-prefetch" href="https://maps.google.com">
     <!-- SEO -->
     <link rel="stylesheet" href="assets/js/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/js/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -99,181 +90,6 @@
         }
     </style>
 
-    <!-- js start -->
-    <script src="assets/js/jquery.min.js"></script>
-
-    <script src="assets/js/intlTelInput.min.js"></script>
-    <script src="assets/js/utils.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-    <!-- slid to submit end-->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- gallery JS -->
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/slick-lightbox.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script type="text/javascript">
-        $(window).on("load", function () {
-            // Wait for 10 seconds (10000 milliseconds) after the page has loaded
-            setTimeout(function () {
-                $("#autoPopup").modal("show");
-            }, 100); // 10000 milliseconds = 10 seconds
-        });
-
-        $(document).ready(function () {
-            $(".js-gallery").slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                arrows: true,
-                fade: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                adaptiveHeight: true,
-                prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-arrow-left"></i></span>',
-                nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-arrow-right"></i></span>',
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            centerMode: true,
-                            centerPadding: "0px",
-                            slidesToShow: 4,
-                        },
-                    },
-                    {
-                        breakpoint: 980,
-                        settings: {
-                            centerMode: true,
-                            centerPadding: "0px",
-                            slidesToShow: 3,
-                        },
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            centerMode: false,
-                            centerPadding: "0px",
-                            slidesToShow: 1,
-                        },
-                    },
-                ],
-            });
-            $(".js-gallery").slickLightbox({
-                src: "src",
-                itemSelector: ".js-gallery-popup img",
-                background: "rgba(0, 0, 0, .7)",
-            });
-
-            $("#slick1").slick({
-                rows: 2,
-                dots: false,
-                arrows: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                prevArrow: '<span class="amenities-arrow mod-prev"><i class="fas fa-arrow-left"></i></span>',
-                nextArrow: '<span class="amenities-arrow mod-next"><i class="fas fa-arrow-right"></i></span>',
-                infinite: true,
-                speed: 300,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            centerMode: true,
-                            centerPadding: "0px",
-                            slidesToShow: 4,
-                        },
-                    },
-                    {
-                        breakpoint: 980,
-                        settings: {
-                            centerMode: true,
-                            centerPadding: "0px",
-                            slidesToShow: 3,
-                        },
-                    },
-                    {
-                        breakpoint: 480,
-                        row: 1,
-                        settings: {
-                            centerMode: true,
-                            centerPadding: "0px",
-                            slidesToShow: 1,
-                        },
-                    },
-                ],
-            });
-        });
-    </script>
-
-
-    <script>
-        $(document).ready(function () {
-            var itiInstances = [];
-
-            $(".phone").each(function () {
-                var input = this;
-                var iti = window.intlTelInput(input, {
-                    initialCountry: "in", // ✅ Default India
-                    separateDialCode: true,
-                    allowDropdown: false,
-                    utilsScript: "assets/js/utils.js",
-                });
-                itiInstances.push({ input: input, iti: iti });
-
-                // Update values on country change as well
-                $(input).on("countrychange", function () {
-                    $(input).trigger("keyup");
-                });
-            });
-
-            $(".phone").on("keyup change", function () {
-                var input = this;
-                // ✅ find the corresponding iti instance for this input
-                var instance = itiInstances.find((item) => item.input === input);
-                if (!instance) return;
-
-                var fullNumber = instance.iti.getNumber(); // E.164 format e.g. +919876543210
-                var countryData = instance.iti.getSelectedCountryData();
-
-                //$(input).closest('form').find("input[name='fullMobileNo']").val(fullNumber);
-                $(input).closest("form").find("input[name='iso_code']").val(countryData.iso2);
-                $(input)
-                    .closest("form")
-                    .find("input[name='mobileExt']")
-                    .val("+" + countryData.dialCode);
-            });
-        });
-        var querystring = window.location.href;
-        var aaa = querystring.split("?");
-        jQuery("#utmtracking a").each(function () {
-            var href = jQuery(this).attr("href");
-            var href2 = href + "?" + aaa[1];
-            jQuery(this).attr("href", href2);
-        });
-
-        var current_url = querystring;
-        //alert(current_url);
-        var str2 = "utm_";
-        if (current_url.indexOf(str2) != -1) {
-            setCookie("cp_utm_data", current_url, 1);
-        }
-
-        function setCookie(name, value, days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
-    </script>
-
-    <!-- js end -->
 
 </head>
 
@@ -374,7 +190,7 @@
                                             data-srcset="assets/images/banner/Banner1.webp"
                                             srcset="assets/images/banner/Banner1.webp" />
                                         <img class="d-block w-100" data-srcset="assets/images/banner/Banner1.webp"
-                                            srcset="assets/images/banner/Banner1.webp" />
+                                            srcset="assets/images/banner/Banner1.webp" fetchpriority="high" />
                                     </picture>
                                 </div>
                                 <div class="carousel-item">
@@ -382,7 +198,7 @@
                                         <source media="(max-width: 750px)" data-srcset="assets/images/banner/desk1.webp"
                                             srcset="assets/images/banner/desk1.webp" />
                                         <img class="d-block w-100" data-srcset="assets/images/banner/desk1.webp"
-                                            srcset="assets/images/banner/desk1.webp" />
+                                            srcset="assets/images/banner/desk1.webp" loading="lazy" decoding="async" />
                                     </picture>
                                 </div>
                                 <div class="carousel-item">
@@ -390,7 +206,7 @@
                                         <source media="(max-width: 750px)" data-srcset="assets/images/banner/desk2.webp"
                                             srcset="assets/images/banner/desk2.webp" />
                                         <img class="d-block w-100" data-srcset="assets/images/banner/desk2.webp"
-                                            srcset="assets/images/banner/desk2.webp" />
+                                            srcset="assets/images/banner/desk2.webp" loading="lazy" decoding="async" />
                                     </picture>
                                 </div>
 
@@ -700,7 +516,7 @@
                                     data-bs-whatever="Enquire Now" data-id="Unit Layout Plan" style="cursor: pointer;">
 
                                     <img src="assets/images/floor-plan/UnitPlan.webp" alt="Unit Plan"
-                                        class="img-fluid unit_plan_img" />
+                                        class="img-fluid unit_plan_img" loading="lazy" />
 
                                     <!-- Overlay -->
                                     <figcaption class="unit-overlay">
@@ -735,65 +551,70 @@
                             <div id="slick1">
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Banquet Hall.png" alt="Banquet Hall" />
+                                        <img src="assets/images/amenities/Banquet Hall.png" alt="Banquet Hall"
+                                            loading="lazy" />
                                         <p>Banquet Hall</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Gymnasium.png" alt="Gymnasium" />
+                                        <img src="assets/images/amenities/Gymnasium.png" alt="Gymnasium"
+                                            loading="lazy" />
                                         <p>Gymnasium</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Indoor Games Area.png"
-                                            alt="Indoor Games Area" />
+                                        <img src="assets/images/amenities/Indoor Games Area.png" alt="Indoor Games Area"
+                                            loading="lazy" />
                                         <p>Indoor Games Area</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Jogging Track.png" alt="Jogging Track" />
+                                        <img src="assets/images/amenities/Jogging Track.png" alt="Jogging Track"
+                                            loading="lazy" />
                                         <p>Jogging Track</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Kids Play Area.png" alt="Kids Play Area" />
+                                        <img src="assets/images/amenities/Kids Play Area.png" alt="Kids Play Area"
+                                            loading="lazy" />
                                         <p>Kids Play Area</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Landscaped Garden.png"
-                                            alt="Landscaped Garden" />
+                                        <img src="assets/images/amenities/Landscaped Garden.png" alt="Landscaped Garden"
+                                            loading="lazy" />
                                         <p>Landscaped Garden</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
                                         <img src="assets/images/amenities/Multipurpose Court.png"
-                                            alt="Multipurpose Court" />
+                                            alt="Multipurpose Court" loading="lazy" />
                                         <p>Multipurpose Court</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
                                         <img src="assets/images/amenities/Senior Citizen Area.png"
-                                            alt="Senior Citizen Area" />
+                                            alt="Senior Citizen Area" loading="lazy" />
                                         <p>Senior Citizen Area</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Swimming Pool.png" alt="Swimming Pool" />
+                                        <img src="assets/images/amenities/Swimming Pool.png" alt="Swimming Pool"
+                                            loading="lazy" />
                                         <p>Swimming Pool</p>
                                     </div>
                                 </div>
                                 <div class="slide-item">
                                     <div class="amenity-content amenities-img-holder" style="width: 100%; height:auto;">
-                                        <img src="assets/images/amenities/Parking.png" alt="Parking" />
+                                        <img src="assets/images/amenities/Parking.png" alt="Parking" loading="lazy" />
                                         <p>Parking</p>
                                     </div>
                                 </div>
@@ -823,32 +644,38 @@
                             <div class="gallery js-gallery">
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery1.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery1.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery2.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery2.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery3.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery3.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery4.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery4.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery5.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery5.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                                 <div class="gallery-item">
                                     <div class="gallery-img-holder js-gallery-popup"><img
-                                            src="assets/images/gallery/Gallery6.webp" alt="" class="gallery-img" />
+                                            src="assets/images/gallery/Gallery6.webp" alt="" class="gallery-img"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -864,7 +691,7 @@
                                 <iframe frameborder="0" allowfullscreen="" sandbox="allow-scripts allow-same-origin"
                                     title="Google map"
                                     src="https://maps.google.com/maps?q=Arkade%20Evoke%20Goregaon%20West%20Bangur%20Nagar&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                    width="100%" height="300"
+                                    width="100%" height="300" loading="lazy"
                                     style="border: 1px solid #333; padding: 2px; background: #fff;"></iframe>
                             </div>
                         </div>
@@ -877,31 +704,31 @@
                                         <a class="nav-link d-flex align-items-center active show" data-bs-toggle="pill"
                                             href="#business">
                                             <img src="assets/images/gif_icon/Connectivity.gif" width="36"
-                                                class="img-fluid mb-2 me-2" />
+                                                class="img-fluid mb-2 me-2" loading="lazy" />
                                             <h6 class="subtitle inventory">Connectivity</h6>
                                         </a>
                                         <a class="nav-link d-flex align-items-center" data-bs-toggle="pill"
                                             href="#education">
                                             <img src="assets/images/gif_icon/Education.gif" width="36"
-                                                class="img-fluid mb-2 me-2" />
+                                                class="img-fluid mb-2 me-2" loading="lazy" />
                                             <h6 class="subtitle inventory">Education</h6>
                                         </a>
                                         <a class="nav-link d-flex align-items-center" data-bs-toggle="pill"
                                             href="#malls">
                                             <img src="assets/images/gif_icon/Mall.gif" width="36"
-                                                class="img-fluid mb-2 me-2" />
+                                                class="img-fluid mb-2 me-2" loading="lazy" />
                                             <h6 class="subtitle inventory">Shopping</h6>
                                         </a>
                                         <a class="nav-link d-flex align-items-center" data-bs-toggle="pill"
                                             href="#health">
                                             <img src="assets/images/gif_icon/Healthcare.gif" width="36"
-                                                class="img-fluid mb-2 me-2" />
+                                                class="img-fluid mb-2 me-2" loading="lazy" />
                                             <h6 class="subtitle inventory">Healthcare</h6>
                                         </a>
                                         <a class="nav-link d-flex align-items-center" data-bs-toggle="pill"
                                             href="#Lifestyle">
                                             <img src="assets/images/gif_icon/getting-dressed.gif" width="36"
-                                                class="img-fluid mb-2 me-2" />
+                                                class="img-fluid mb-2 me-2" loading="lazy" />
                                             <h6 class="subtitle inventory">Business Hubs</h6>
                                         </a>
 
@@ -1082,7 +909,7 @@
                 <footer class="sec3">
                     <div class="container on-rera">
                         <div class="foot_logo mb-3"><img src="assets/images/logo/logo.png" alt="Project Logo"
-                                class="d-block mx-auto project-logo" style="width: 200px;" /></div>
+                                class="d-block mx-auto project-logo" style="width: 200px;" loading="lazy" /></div>
                         <div id="foot_rera_qr" class="pt-2 mb-2"></div>
                         <div class="elementor-widget-container text-center">
                             <p>
@@ -1119,7 +946,7 @@
                     </div>
                     <div class="container non-rera">
                         <div class="foot_logo mb-3"><img src="assets/images/logo/logo.png" alt="Project Logo"
-                                class="d-block mx-auto project-logo" style="width: 250px;" /></div>
+                                class="d-block mx-auto project-logo" style="width: 250px;" loading="lazy" /></div>
                         <p id="disclaimer">
                             The content on this website is for informational purposes only and is not intended as an
                             offer for services or sale. The project mentioned has not yet received RERA clearance but is
@@ -1536,6 +1363,178 @@
 
 
     <!-- javascript start -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <!-- slid to submit end-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- gallery JS -->
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-lightbox.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            // Wait for 10 seconds (10000 milliseconds) after the page has loaded
+            setTimeout(function () {
+                $("#autoPopup").modal("show");
+            }, 100); // 10000 milliseconds = 10 seconds
+        });
+
+        $(document).ready(function () {
+            $(".js-gallery").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                adaptiveHeight: true,
+                prevArrow: '<span class="gallery-arrow mod-prev"><i class="fas fa-arrow-left"></i></span>',
+                nextArrow: '<span class="gallery-arrow mod-next"><i class="fas fa-arrow-right"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: "0px",
+                            slidesToShow: 4,
+                        },
+                    },
+                    {
+                        breakpoint: 980,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: "0px",
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: false,
+                            centerPadding: "0px",
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+            $(".js-gallery").slickLightbox({
+                src: "src",
+                itemSelector: ".js-gallery-popup img",
+                background: "rgba(0, 0, 0, .7)",
+            });
+
+            $("#slick1").slick({
+                rows: 2,
+                dots: false,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: '<span class="amenities-arrow mod-prev"><i class="fas fa-arrow-left"></i></span>',
+                nextArrow: '<span class="amenities-arrow mod-next"><i class="fas fa-arrow-right"></i></span>',
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: "0px",
+                            slidesToShow: 4,
+                        },
+                    },
+                    {
+                        breakpoint: 980,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: "0px",
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        row: 1,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: "0px",
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            var itiInstances = [];
+
+            $(".phone").each(function () {
+                var input = this;
+                var iti = window.intlTelInput(input, {
+                    initialCountry: "in", // ✅ Default India
+                    separateDialCode: true,
+                    allowDropdown: false,
+                    utilsScript: "assets/js/utils.js",
+                });
+                itiInstances.push({ input: input, iti: iti });
+
+                // Update values on country change as well
+                $(input).on("countrychange", function () {
+                    $(input).trigger("keyup");
+                });
+            });
+
+            $(".phone").on("keyup change", function () {
+                var input = this;
+                // ✅ find the corresponding iti instance for this input
+                var instance = itiInstances.find((item) => item.input === input);
+                if (!instance) return;
+
+                var fullNumber = instance.iti.getNumber(); // E.164 format e.g. +919876543210
+                var countryData = instance.iti.getSelectedCountryData();
+
+                //$(input).closest('form').find("input[name='fullMobileNo']").val(fullNumber);
+                $(input).closest("form").find("input[name='iso_code']").val(countryData.iso2);
+                $(input)
+                    .closest("form")
+                    .find("input[name='mobileExt']")
+                    .val("+" + countryData.dialCode);
+            });
+        });
+        var querystring = window.location.href;
+        var aaa = querystring.split("?");
+        jQuery("#utmtracking a").each(function () {
+            var href = jQuery(this).attr("href");
+            var href2 = href + "?" + aaa[1];
+            jQuery(this).attr("href", href2);
+        });
+
+        var current_url = querystring;
+        //alert(current_url);
+        var str2 = "utm_";
+        if (current_url.indexOf(str2) != -1) {
+            setCookie("cp_utm_data", current_url, 1);
+        }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+    </script>
 
     <!-- javascript end -->
 </body>
